@@ -1,0 +1,85 @@
+#tamagochi{
+	width: 900px;
+	height: 500px;
+	border: 1px solid #000; 
+	margin: 0 auto;
+	background: #fff;
+	position: relative;
+}
+
+/*Панель управления*/
+
+#control-panel{
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	background: #fff3e3;
+	position: absolute;
+	bottom: 0;
+}
+
+#control-panel .btn-action{
+	padding: 0 20px;
+	flex: 1;
+	margin-right: 5px;
+	background: #BEAFA9;
+	cursor: pointer;
+	transition: all .5s;
+}
+
+#control-panel .btn-action:hover{
+	background: #DA4B39;
+}
+
+#control-panel .btn-action:last-child{
+	margin: 0;
+}
+
+#control-panel .btn-action p{
+	text-align: center;
+}
+
+/*Индикаторы*/
+
+#indicator > div{
+	margin: 10px 0;
+	max-width: 200px;
+	background: #EEF1ED;
+}
+
+#indicator .progreess-bar{
+	width: 50%;
+	padding: 5px 0;
+	background: #DA4B39;
+	box-sizing: border-box;
+}
+
+/*Персонаж на канвасе*/
+
+#character{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#wasted{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	display: table;
+	background: rgba(0,0,0,.9);
+	z-index: -1;
+	opacity: 0;
+	transition: all 5s;
+}
+
+#wasted p{
+	font-size: 70px;
+	display: table-cell;
+	vertical-align: middle;
+	font-weight: bold;
+	text-align: center;
+	color: #E63646;
+}

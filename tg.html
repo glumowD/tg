@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Тамагочи</title>
+	<link rel="stylesheet" type="text/css" href="css/tg.css">
+</head>
+<body>
+<div id="tamagochi">
+	<div id="indicator">
+		<div class='thirst'>
+			<p class='progreess-bar' data-indicator='water'>Жажда</p>
+		</div>
+		<div class="hunger">
+			<p class="progreess-bar" data-indicator='eat'>Голод</p>
+		</div>
+		<div class="boredom">
+			<p class="progreess-bar" data-indicator='happy'>Скука</p>
+		</div>
+		<div class="indicator-toilet">
+			<p class="progreess-bar" data-indicator='toilet'>Туалет</p>
+		</div>
+		<div class="pollution">
+			<p class="progreess-bar" data-indicator='washing'>Загрязнение</p>
+		</div>
+		<div class="fatigue">
+			<p class="progreess-bar" data-indicator='sleep'>Усталость</p>
+		</div>
+	</div>
+	<div id="control-panel">
+		<div class="eat btn-action">
+			<p>Накормить</p>
+		</div>
+		<div class="water btn-action">
+			<p>Напоить</p>
+		</div>
+		<div class="happy btn-action">
+			<p>Развеселить</p>
+		</div>
+		<div class="toilet btn-action">
+			<p>Туалет</p>
+		</div>
+		<div class="washing btn-action">
+			<p>Душ</p>
+		</div>
+		<div class="sleep btn-action">
+			<p>Сон</p>
+		</div>
+	</div>
+	<canvas id="character" width='900px' height='450px'></canvas>
+	<div id="wasted">
+		<p>wasted</p>
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="js/tg.js"></script>
+</html>
